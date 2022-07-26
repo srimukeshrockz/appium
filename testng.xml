@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="ParallelTest1">
+  <parameter name="UDID" value="emulator-5554"></parameter>
+  <parameter name="port" value="4723"></parameter>
+  <parameter name="DeviceName" value="redmi"></parameter>
+  <parameter name="PlatformVersion" value="11"></parameter>
+    <classes>
+      <class name="script.SwipeOnTouchScreenApp"/>
+      <class name="script.ParallelExecution"/>
+      <class name="script.TouchScreenScript"/>    
+    </classes>
+  </test> <!-- ParallelTest -->
+  
+  <test name="ParallelTest2">
+  <parameter name="UDID" value="a3bacc8f"></parameter>
+  <parameter name="port" value="4722"></parameter>
+  <parameter name="DeviceName" value="Redmi Note 7 pro"></parameter>
+  <parameter name="PlatformVersion" value="10"></parameter>
+    <classes>
+      <class name="script.SwipeOnTouchScreenApp"/>
+      <class name="script.ParallelExecution"/>
+      <class name="script.TouchScreenScript"/>
+    </classes>
+  </test> <!-- ParallelTest -->
+</suite> <!-- Suite -->
